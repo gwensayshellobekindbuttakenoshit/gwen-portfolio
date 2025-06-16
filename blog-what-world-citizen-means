@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨What “Citizen of the World” Means to Me🌍</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <!-- your existing header and nav here -->
+  </header>
+
+  <main>
+    <article class="blog-post">
+      <h2>✨What “Citizen of the World” Means to Me🌍</h2>
+      <p><em>Posted on June 16, 2025</em></p>
+      <p>
+        I’ve never really felt like I belonged to just one place. Born in Venezuela, raised in the United States, now navigating life in Mexico, I’ve met people, lost people, gained languages, regained lost languages (lol), and carried stories across borders. “Citizen of the World” isn’t just a cute name — it’s who I am.   
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GWMAD. All rights reserved.</p>
+  </footer>
+</body>
+</html>
