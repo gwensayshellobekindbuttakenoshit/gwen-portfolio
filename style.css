@@ -104,6 +104,27 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.blog-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-list li {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.blog-list a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog-list a:hover {
+  text-decoration: underline;
+}
+
+
 /* ------------------- */
 /* 📱 Mobile Styles */
 /* ------------------- */
