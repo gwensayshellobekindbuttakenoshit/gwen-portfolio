@@ -141,4 +141,24 @@ h2 {
   }
 }
 
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none; /* hidden by default */
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#scrollToTop:hover {
+  background-color: #005fa3;
+  transform: scale(1.1);
+}
 
