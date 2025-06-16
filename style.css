@@ -25,8 +25,8 @@ a:hover {
 
 /* Header & Navigation */
 header {
-  background-color: #636363;
-  color: #fff;
+  background-color: #333;
+  color: #f4f4f4;
   padding: 20px 0;
   text-align: center;
 }
@@ -59,7 +59,7 @@ footer {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
-  background-color: #636363;
+  background-color: #333;
   color: #fff;
   border-radius: 8px;
 }
