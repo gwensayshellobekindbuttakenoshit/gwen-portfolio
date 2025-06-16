@@ -25,13 +25,15 @@ a:hover {
 
 /* Header & Navigation */
 header {
-  background-color: #333;
-  color: #f4f4f4;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background-color: #333;        /* dark gray background */
+  color: #ffffff;                /* white text */
+  padding: 1.5rem 2rem;
+  text-align: center;           /* centers the text */
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;               /* make sure h1 stays white */
 }
 
 nav ul {
