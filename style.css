@@ -205,3 +205,21 @@ h2 {
   font-size: 0.9rem;
   color: #666;
 }
+
+.language-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9em;
+}
+
+.language-switch a {
+  text-decoration: none;
+  color: #f4f4f4; /* or whatever fits your design */
+  background-color: #444;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.language-switch a:hover {
+  background-color: #666;
+}
