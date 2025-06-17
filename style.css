@@ -272,7 +272,8 @@ h2 {
   .language-switch {
     position: absolute;
     top: 15px;
-    right: 15px;
+    left: 15px;
+    right: auto;
     text-align: left;
   }
 
