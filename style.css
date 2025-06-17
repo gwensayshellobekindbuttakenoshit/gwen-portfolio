@@ -271,8 +271,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .language-switch {
     position: absolute;
-    bottom: 15px;
-    top: auto;
+    top: 15px;
     left: 15px;
     right: auto;
     text-align: left;
