@@ -259,4 +259,26 @@ h2 {
     margin: 8px 0;
   }
 }
+.language-switch {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0.9em;
+  z-index: 1000;
+}
+
+/* On small screens, just ensure it still stays in place */
+@media screen and (max-width: 768px) {
+  .language-switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-align: right;
+  }
+
+  header {
+    padding-top: 50px; /* Give it space so it doesn't overlap */
+  }
+}
+
 
