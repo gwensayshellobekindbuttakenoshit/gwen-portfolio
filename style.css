@@ -310,3 +310,11 @@ h2 {
     transform: translateY(-5px) rotate(10deg);
   }
 }
+.nav-divider {
+  border: none;
+  height: 2px;
+  background-color: #0077cc;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
