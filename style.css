@@ -1,23 +1,8 @@
+/* === Base Styles === */
 html {
   scroll-behavior: smooth;
 }
 
-/* Button-like link effects */
-a.button {
-  background-color: #0077cc;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  display: inline-block;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-a.button:hover {
-  background-color: #005fa3;
-  transform: scale(1.05);
-}
-
-/* Font reset */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #fefefe;
@@ -42,17 +27,32 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header & Navigation */
+/* === Buttons === */
+a.button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+/* === Header & Navigation === */
 header {
-  background-color: #333;        /* dark gray background */
-  color: #ffffff;                /* white text */
+  background-color: #595263;
+  color: #f8f5f5;
   padding: 1.5rem 2rem;
-  text-align: center;           /* centers the text */
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
-  color: #ffffff;               /* make sure h1 stays white */
+  color: #f6f4f4;
 }
 
 nav ul {
@@ -78,16 +78,17 @@ nav a:hover {
   border-radius: 8px;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 20px;
-  background-color: #333;
+  background-color: #98a4e1;
   color: #fff;
   border-radius: 8px;
 }
 
+/* === Layout === */
 main {
   padding: 2rem;
   max-width: 960px;
@@ -104,6 +105,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* === Blog === */
 .blog-list {
   list-style: none;
   padding-left: 0;
@@ -116,71 +118,7 @@ h2 {
 
 .blog-list a {
   color: #0077cc;
-  text-decoration: none;
   font-weight: 600;
-}
-
-.blog-list a:hover {
-  text-decoration: underline;
-}
-
-
-/* ------------------- */
-/* 📱 Mobile Styles */
-/* ------------------- */
-
-@media (max-width: 768px) {
-  header {
-    text-align: center;
-    padding: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  section {
-    margin-bottom: 2rem;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-}
-
-#scrollToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: none; /* hidden by default */
-  z-index: 1000;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#scrollToTop:hover {
-  background-color: #005fa3;
-  transform: scale(1.1);
 }
 
 .blog-post {
@@ -206,25 +144,61 @@ h2 {
   color: #666;
 }
 
-.language-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 0.9em;
+/* === Mobile Responsive === */
+@media screen and (max-width: 768px) {
+  header, nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
-.language-switch a {
-  text-decoration: none;
-  color: #f4f4f4; /* or whatever fits your design */
-  background-color: #444;
-  padding: 6px 10px;
-  border-radius: 8px;
-}
-.language-switch a:hover {
-  background-color: #666;
+/* === Scroll to Top Button === */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+#scrollToTop:hover {
+  background-color: #005fa3;
+  transform: scale(1.1);
+}
 
+/* === Language Switch === */
 .language-switch {
   position: absolute;
   top: 20px;
@@ -233,53 +207,106 @@ h2 {
   z-index: 10;
 }
 
-/* Responsive fix */
-@media screen and (max-width: 768px) {
-  .language-switch {
-    position: relative;
-    text-align: left;
-    margin-top: 10px;
-    top: auto;
-    right: auto;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  nav ul li {
-    margin: 8px 0;
-  }
+.language-switch a {
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: #444;
+  padding: 6px 10px;
+  border-radius: 8px;
 }
-.language-switch {
+
+.language-switch a:hover {
+  background-color: #666;
+}
+
+/* === Work Page Elements === */
+.faq-toggle {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: #dcaada;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.faq-toggle:hover {
+  background-color: #533c73;
+}
+
+.faq-answer {
+  display: none;
+  padding-left: 1rem;
+  color: #533c73;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
+
+/* === Cosmic Style Elements === */
+.cosmic-intro {
+  background: linear-gradient(135deg, #b478f4, #64d5e4);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  color: #2c2c2c;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  text-align: center;
+  font-style: italic;
+}
+
+.cosmic-intro::before,
+.cosmic-intro::after {
+  content: "✨";
   position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 0.9em;
-  z-index: 1000;
+  font-size: 2rem;
+  opacity: 0.4;
+  animation: floatSparkles 6s infinite ease-in-out;
 }
 
-/* On small screens, just ensure it still stays in place */
-@media screen and (max-width: 768px) {
-  .language-switch {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: auto;
-    text-align: left;
-  }
-
-  header {
-    padding-top: 50px; /* Give it space so it doesn't overlap */
-  }
+.cosmic-intro::before {
+  top: -10px;
+  left: 10px;
 }
 
+.cosmic-intro::after {
+  bottom: -10px;
+  right: 10px;
+}
 
+@keyframes floatSparkles {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(10deg);
+  }
+}
