@@ -180,6 +180,14 @@ h2 {
     font-size: 1rem;
     text-align: center;
   }
+
+  .cosmic-intro {
+    width: 95%;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+
 }
 
 /* === Scroll to Top Button === */
