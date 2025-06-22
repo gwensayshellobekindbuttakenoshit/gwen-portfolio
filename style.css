@@ -173,6 +173,12 @@ h2 {
   p {
     font-size: 1rem;
   }
+  .cosmic-intro {
+    width: 90%;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 /* === Scroll to Top Button === */
@@ -280,6 +286,7 @@ h2 {
   position: relative;
   text-align: center;
   font-style: italic;
+  display: block;
 }
 
 .cosmic-intro::before,
