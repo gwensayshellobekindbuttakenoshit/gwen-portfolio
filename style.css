@@ -174,27 +174,15 @@ h2 {
   p {
     font-size: 1rem;
   }
-  .cosmic-intro {
-    width: 90%;
-    margin: 1.5rem auto;
-    font-size: 1rem;
-    text-align: center;
-  }
 
   .cosmic-intro {
-    width: 95%;
+    width: 100%;
     font-size: 1rem;
     padding: 1.5rem;
-  }
-}
-  .cosmic-intro {
-    width: 100vw;
     border-radius: 0;
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
   }
-}
-
-
 }
 
 /* === Scroll to Top Button === */
