@@ -1,24 +1,5 @@
-
-<script>
-  const scrollToTopBtn = document.getElementById("scrollToTop");
-
-  window.onscroll = () => {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      scrollToTopBtn.style.display = "block";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }
-  };
-
-  scrollToTopBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-</script>
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,33 +67,43 @@
 </head>
 <body class="home-page">
   <header class="hero">
-     <div class="language-switch">
-  <a href="index.html">🌐 English </a>
-</div>
-   <h1>Bienvenid@ al Gwenverse🌠</h1>
-      <h2>Un portal digital donde se encuentran el diseño, la sanación y el cosmos.</h2>
-  <nav>
+    <div class="language-switch">
+      <a href="index.html">🌐 English</a>
+    </div>
+    <h1>Bienvenid@ al Gwenverse🌠</h1>
+    <h2>Un portal digital donde se encuentran el diseño, la sanación y el cosmos.</h2>
+    <nav>
       <ul>
-    <li><a href="about-es.html">Sobre Mí</a></li>
-    <li><a href="https://gwmad.myshopify.com/" target="_blank">Tienda</a></li>
-    <li><a href="blog-es.html">Blog</a></li>
-    <!--<li><a href="resume-es.html">Currículum</a></li>-->
+        <li><a href="about-es.html">Sobre Mí</a></li>
+        <li><a href="https://gwmad.myshopify.com/" target="_blank">Tienda</a></li>
+        <li><a href="blog-es.html">Blog</a></li>
+        <!--<li><a href="resume-es.html">Currículum</a></li>-->
         <li><a href="trabaja-conmigo.html">Contáctame</a></li>
       </ul>
     </nav>
-
-    
-<p>Entra a un universo que refleja más que solo píxeles — está construido con presencia, propósito y un toque de polvo de estrellas. Ya sea que estés aquí para explorar, colaborar o simplemente pasear, hay una dimensión esperándote.</p>
-<a href="trabaja-conmigo.html" class="button">Trabaja Conmigo</a>
-
+    <p>Entra a un universo que refleja más que solo píxeles — está construido con presencia, propósito y un toque de polvo de estrellas. Ya sea que estés aquí para explorar, colaborar o simplemente pasear, hay una dimensión esperándote.</p>
+    <a href="trabaja-conmigo.html" class="button">Trabaja Conmigo</a>
     <hr class="nav-divider" />
   </header>
-</body>
-</html>
+
   <footer>
     <p>&copy; 2025 GWMAD. Todos los derechos reservados.</p>
   </footer>
- scrollToTopBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-</script>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTop");
+
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    scrollToTopBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
