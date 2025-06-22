@@ -176,12 +176,9 @@ h2 {
   }
 
   .cosmic-intro {
-    width: 100%;
-    font-size: 1rem;
+    width: 95%;
     padding: 1.5rem;
-    border-radius: 0;
-    margin: 0 auto;
-    text-align: center;
+    font-size: 1rem;
   }
 }
 
@@ -276,21 +273,26 @@ h2 {
 }
 
 /* === Cosmic Style Elements === */
+.cosmic-intro-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .cosmic-intro {
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
   background: linear-gradient(135deg, #b478f4, #64d5e4);
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem auto;
-  width: 90%;
-  max-width: 800px;
   color: #2c2c2c;
   font-size: 1.1rem;
   line-height: 1.6;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: relative;
-  text-align: center;
   font-style: italic;
-  display: block;
 }
 
 .cosmic-intro::before,
