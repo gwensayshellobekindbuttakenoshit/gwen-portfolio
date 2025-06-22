@@ -187,6 +187,13 @@ h2 {
     padding: 1.5rem;
   }
 }
+  .cosmic-intro {
+    width: 100vw;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
 
 }
 
