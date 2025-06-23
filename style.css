@@ -8,7 +8,7 @@ header.hero {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   text-align: center;
   padding: 3rem;
   box-sizing: border-box;
@@ -114,6 +114,7 @@ section {
 h2 {
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+  color: ccccff;
 }
 
 /* === Blog === */
