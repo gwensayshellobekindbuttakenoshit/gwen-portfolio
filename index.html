@@ -1,33 +1,14 @@
-
-<script>
-  const scrollToTopBtn = document.getElementById("scrollToTop");
-
-  window.onscroll = () => {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      scrollToTopBtn.style.display = "block";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }
-  };
-
-  scrollToTopBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-</script>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multiverse Gwen</title>
   <link rel="stylesheet" href="style.css" />
 
 </head>
-<body class="home-page">
-  <header class="hero">
+<body>
+  <header>
      <div class="language-switch">
   <a href="index-es.html">🌐 Español </a>
 </div>
@@ -35,15 +16,20 @@
   <nav>
       <ul>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="say-heller.html">Contact</a></li>
+        <li><a href="say-heller.html">Salutations</a></li>
       </ul>
     </nav>
+    </header>
 <hr class="nav-divider" />
  
+<main>
+  <section class="container">
     <p>Welcome to the "Gwenverse"- I guess you could say. 
-      <br>I am a lot of things and do a lot of things, depending on who you're talking to. 
+      <br>I am a lot of things and do a lot of things- depending on who you're talking to. (HEY! Don't you roll your eyes at
+      me. I enjoy using dashes, so please-I'm not AI nor am I using AI. Oh, and I occasionally will use an oxford comma here and/or there sometimes, too.)
+      <br>
       <br>I created this page because... well, I don't know what to journal anymore, nothing has been coming out. My head is busy and loud, but somehow
-      that "I'm so good at journaling and brain dumping, *sticks tongue out and says "ah" like Megan Thee Stallion*" thing isn't happening anymore, and if I had a dollar
+      that "I'm so good at journaling and brain dumping *sticks tongue out and says "ah" like Megan Thee Stallion*" thing isn't happening anymore, and if I had a dollar
       for every time someone has told me to write a book, do blogging, short novels, etc. I would be so financially free..
       Oh, what a dream.
       ...and mostly because I didn't feel like having to subscribe and be surveilled and sensored by 
@@ -55,13 +41,19 @@
       <br>
       <br>
       <br>
-      Anyway, enjoy.
+      Anyway, enjoy. Bye.
       <br>
       Gwen &hearts;
     </p>
-  </header>
-</body>
-</html>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 GWMAD. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 GWMAD. All rights reserved.</p>
+    </div>
   </footer>
+
+</body>
+
+</html>
