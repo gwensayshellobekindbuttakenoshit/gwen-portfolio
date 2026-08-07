@@ -3,10 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
-    body.home-page {
+    body.index {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #0d0d2b, #a1ebea);
+      background: linear-gradient(to right, #456cdf, #a1ebea);
       background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
       background-blend-mode: overlay;
       background-size: cover;
@@ -112,7 +112,7 @@ a.button:hover {
 
 /* === Header & Navigation === */
 header {
-  background-color: #595263;
+  background-color: #6b6574;
   color: #f8f5f5;
   padding: 1.5rem 2rem;
   padding-top: 3rem;
@@ -161,7 +161,7 @@ footer {
 main {
   padding: 2rem;
   max-width: 960px;
-  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 section {
