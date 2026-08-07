@@ -3,12 +3,69 @@ html {
   scroll-behavior: smooth;
 }
 
+    body.home-page {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0d0d2b, #a1ebea);
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      color: #ffffff;
+    }
+
+    header.hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 120vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      color: #d1b3ff;
+      margin: 0;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-top: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      color: #f0f0f6;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    .hero a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      background: #b6c9ff;
+      color: #0d0d2b;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .hero a.button:hover {
+      background: #d1b3ff;
+    }
+    
 header.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 100vh;
   text-align: center;
   padding: 3rem;
   box-sizing: border-box;
@@ -114,7 +171,6 @@ section {
 h2 {
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
-  color: ccccff;
 }
 
 /* === Blog === */
@@ -177,12 +233,10 @@ h2 {
 
   h1 {
     font-size: 1.8rem;
-    color: #595263;
   }
 
   h2 {
     font-size: 1.5rem;
-    color: #ccccff;
   }
 
   p {
@@ -200,20 +254,17 @@ h2 {
   }
 
   .hero h1 {
-    font-size: 4rem;
+    font-size: 2.2rem;
     margin-top: 1.5rem;
-    color: #d1b3ff;
   }
 
   .hero h2 {
-    font-size: 2rem;
-    color: #ccccff;
+    font-size: 1.5rem;
   }
 
   .hero p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
-    color: #f0f0f6;
   }
 
 }
