@@ -1,19 +1,29 @@
+
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+
+  window.onscroll = () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  scrollToTopBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-  body.about-page {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #0d0d2b, #1a1a40);
-    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    color: #100f0f;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiverse Gwen</title>
+  <link rel="stylesheet" href="style.css" />
 
 </head>
 <body class="home-page">
