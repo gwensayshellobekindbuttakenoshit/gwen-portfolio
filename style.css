@@ -1,181 +1,369 @@
 
-/* ====== CSS VARIABLES ====== */
-:root {
-    /* Colors */
-    --color-primary: #6a4a8c;    /* Main purple */
-    --color-primary-dark: #51366d; /* Darker purple (for hovers) */
-    --color-background: #71d5c0;  /* Cream background */
-    --color-text: #333;           /* Main text color (dark gray) */
-    --color-text-light: #f5f1e6;  /* Light text for dark backgrounds */
-    --color-accent: #9f6ba0;      /* Lighter purple accent */
-
-    /* Fonts */
-    --font-heading: 'Georgia', serif;
-    --font-body: 'Helvetica', 'Arial', sans-serif;
+/* === Language Switch === */
+.language-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9em;
+  z-index: 10;
+}
+.language-switch a {
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: #444;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.language-switch a:hover {
+  background-color: #666;
 }
 
-/* ====== GLOBAL STYLES ====== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+/* === Base Styles === */
+html {
+  scroll-behavior: smooth;
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #456cdf, #a1ebea);
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      color: #ffffff;
+    }
+    header.hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 120vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      color: #d1b3ff;
+      margin: 0;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-top: 1rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      color: #f0f0f6;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+    .hero a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      background: #b6c9ff;
+      color: #0d0d2b;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .hero a.button:hover {
+      background: #d1b3ff;
+    }
+    
+header.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 3rem;
+  box-sizing: border-box;
+}
 body {
-    font-family: var(--font-body);
-    color: var(--color-text);
-    background-color: var(--color-background);
-    line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background-color: #fefefe;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
-
-/* ====== TYPOGRAPHY ====== */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    margin-bottom: 1rem;
-    color: var(--color-primary);
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  margin-bottom: 1rem;
 }
-
-p {
-    margin-bottom: 1rem;
+a {
+  color: #0077cc;
+  text-decoration: none;
 }
-
-/* ====== LAYOUT & CONTAINERS ====== */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
+a:hover {
+  color: #005999;
+  text-decoration: underline;
 }
-
-/* ====== HEADER & NAVIGATION ====== */
+/* === Buttons === */
+a.button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+a.button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+/* === Header & Navigation === */
 header {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  background-color: #6b6574;
+  color: #f8f5f5;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  z-index: 1000;
 }
-
+header h1 {
+  margin: 0;
+  color: #f6f4f4;
+}
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
-
 nav ul li {
-    margin: 0 1.5rem;
+  margin: 0 1.5rem;
 }
-
-nav ul li a {
-    color: var(--color-text-light);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+nav a {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
 }
-
-nav ul li a:hover {
-    color: var(--color-accent);
+nav a:hover {
+  background-color: #e6f0ff;
+  border-radius: 8px;
 }
-
-/* ====== HERO SECTION ====== */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: var(--color-background);
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-/* ====== BUTTONS ====== */
-.btn {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-    background-color: var(--color-primary-dark);
-    transform: translateY(-3px);
-}
-
-/* ====== SECTION STYLES ====== */
-section {
-    padding: 5rem 0;
-}
-
-/* ====== PROJECTS/ITEMS GRID ====== */
-.items-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.item {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.item:hover {
-    transform: translateY(-5px);
-}
-
-/* ====== CONTACT FORM ====== */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: var(--font-body);
-}
-
-.form-group textarea {
-    min-height: 150px;
-}
-
-/* ====== FOOTER ====== */
+/* === Footer === */
 footer {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #98a4e1;
+  color: #fff;
+  border-radius: 8px;
+}
+/* === Layout === */
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin-top: 3rem;
+}
+section {
+  margin-bottom: 3rem;
+}
+h2 {
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+/* === Blog === */
+.blog-list {
+  list-style: none;
+  padding-left: 0;
+}
+.blog-list li {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.blog-list a {
+  color: #0077cc;
+  font-weight: 600;
+}
+.blog-post {
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-left: 5px solid #0077cc;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+.blog-post:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.blog-post h3 {
+  margin-top: 0;
+  color: #0077cc;
+}
+.blog-post em {
+  font-size: 0.9rem;
+  color: #666;
+}
+/* === Mobile Responsive === */
+@media screen and (max-width: 768px) {
+  header, nav ul {
+    flex-direction: column;
     text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+  main {
+    padding: 3rem;
+  }
+  section {
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .cosmic-intro {
+    width: 95%;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+    header.hero {
+    padding: 4rem 1.5rem;
+    height: auto;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+/* === Scroll to Top Button === */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#scrollToTop:hover {
+  background-color: #005fa3;
+  transform: scale(1.1);
+}
+
+
+/* === Work Page Elements === */
+.faq-toggle {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: #dcaada;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+.faq-toggle:hover {
+  background-color: #533c73;
+}
+.faq-answer {
+  display: none;
+  padding-left: 1rem;
+  color: #533c73;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 600px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #444;
+}
+/* === Cosmic Style Elements === */
+.cosmic-intro-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.cosmic-intro {
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  background: linear-gradient(135deg, #b478f4, #64d5e4);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  color: #2c2c2c;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  font-style: italic;
+}
+.cosmic-intro::before,
+.cosmic-intro::after {
+  content: "✨";
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.4;
+  animation: floatSparkles 6s infinite ease-in-out;
+}
+.cosmic-intro::before {
+  top: -10px;
+  left: 10px;
+}
+.cosmic-intro::after {
+  bottom: -10px;
+  right: 10px;
+}
+@keyframes floatSparkles {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(10deg);
+  }
+}
+.nav-divider {
+  border: none;
+  height: 2px;
+  background-color: #0077cc;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+.page-wrapper {
+  padding: 0 1rem;
 }
