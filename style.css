@@ -1,3 +1,26 @@
+/* === Language Switch === */
+.language-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9em;
+  z-index: 10;
+}
+
+.language-switch a {
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: #444;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.language-switch a:hover {
+  background-color: #666;
+}
+
+
+
 /* === Base Styles === */
 html {
   scroll-behavior: smooth;
@@ -83,6 +106,7 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   color: #222;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -115,8 +139,11 @@ header {
   background-color: #6b6574;
   color: #f8f5f5;
   padding: 1.5rem 2rem;
-  padding-top: 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
   text-align: center;
+  z-index: 1000;
 }
 
 header h1 {
@@ -127,17 +154,16 @@ header h1 {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
+  justify-content: center;
+
 }
 
 nav ul li {
-  display: inline;
+  margin: 0 1.5rem;
 }
 
 nav a {
-  font-weight: 600;
+  font-weight: bold;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s;
 }
@@ -291,26 +317,7 @@ h2 {
   transform: scale(1.1);
 }
 
-/* === Language Switch === */
-.language-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 0.9em;
-  z-index: 10;
-}
 
-.language-switch a {
-  text-decoration: none;
-  color: #f4f4f4;
-  background-color: #444;
-  padding: 6px 10px;
-  border-radius: 8px;
-}
-
-.language-switch a:hover {
-  background-color: #666;
-}
 
 /* === Work Page Elements === */
 .faq-toggle {
