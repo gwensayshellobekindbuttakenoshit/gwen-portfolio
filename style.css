@@ -38,7 +38,7 @@ html {
       background-size: cover;
       background-repeat: repeat;
       background-attachment: fixed;
-      color: #ffffff;
+      color: #2b2f3c;
       padding: 0;
       line-height: 1.6;
     }
@@ -54,17 +54,17 @@ html {
     }
     .hero h1 {
       font-size: 4rem;
-      color: #d1b3ff;
+      color: #2b2f3c;
       margin: 0;
     }
     .hero h2 {
       font-size: 2rem;
-      color: #ffffff;
+      color: #2b2f3c;
       margin-top: 1rem;
     }
     .hero p {
       font-size: 1.5rem;
-      color: #f0f0f6;
+      color: #2b2f3c;
       margin-top: 1rem;
       max-width: 600px;
     }
@@ -193,7 +193,7 @@ h2 {
 }
 .blog-post em {
   font-size: 0.9rem;
-  color: #666;
+  color: #2b2f3c;
 }
 /* === Mobile Responsive === */
 @media (max-width: 768px) {
@@ -271,7 +271,7 @@ h2 {
   bottom: 30px;
   right: 30px;
   background-color: #0077cc;
-  color: white;
+  color: #2b2f3c;
   border: none;
   padding: 0.6rem 1rem;
   border-radius: 50%;
@@ -310,16 +310,16 @@ h2 {
   gap: 0.75rem;
   max-width: 600px;
 }
-.say=heller-form input,
+.say-heller-form input,
 .say-heller-form textarea {
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #94c5da;
   border-radius: 5px;
 }
 .say-heller-form button {
   padding: 0.5rem 1rem;
   background-color: #222;
-  color: white;
+  color: #2b2f3c;
   border: none;
   border-radius: 5px;
   cursor: pointer;
